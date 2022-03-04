@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  WaterBucketChallenge
+
+  Created by Vasiliy Dumanov on 04.03.2022.
+  
+*/
+
+/* Solution */
+
+"Solution.Error.ZeroInputs" = "Inputs cannot be equal to 0";
+"Solution.Error.BucketsTooSmall" = "At least one bucket should have volume greater than Z";
+"Solution.Error.UnsolvableInputs" = "The problem is not solvable";
+
+/* Inputs Screen */
+
+"Screen.Inputs.Form.Title" = "Enter Input Data";
+"Screen.Inputs.Form.ButtonTitle" = "Solve";
+"Screen.Inputs.Alert.ButtonTitle" = "OK";
+
+/* Solution Screen */
+
+"Screen.Solution.Title" = "Solution";
+"Screen.Solution.StepAction.Empty" = "Empty bucket %@";
+"Screen.Solution.StepAction.Fill" = "Fill bucket %@";
+"Screen.Solution.StepAction.Transfer" = "Transfer bucket %@ to bucket %@";
+

@@ -7,41 +7,144 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C01188E1E4103C1C5390B55 /* Pods_WaterBucketChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95983E0A94F9CB143549DFF2 /* Pods_WaterBucketChallenge.framework */; };
+		25392F40B13DF00B11F51013 /* Pods_WaterBucketChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA5FFD717B62FB52518BED4 /* Pods_WaterBucketChallengeTests.framework */; };
+		FF26FDFB27D2B76E000D94EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF26FDF927D2B76E000D94EC /* Localizable.strings */; };
+		FF26FDFD27D2B960000D94EC /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26FDFC27D2B960000D94EC /* Strings+Generated.swift */; };
+		FF47080127D13E3900CACA9F /* InputsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47080027D13E3900CACA9F /* InputsInteractor.swift */; };
+		FF47080327D13E3F00CACA9F /* InputsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47080227D13E3F00CACA9F /* InputsPresenter.swift */; };
+		FF47080527D1404E00CACA9F /* InputsDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47080427D1404E00CACA9F /* InputsDataFlow.swift */; };
+		FF47080727D143A400CACA9F /* InputsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47080627D143A400CACA9F /* InputsFactory.swift */; };
+		FF47080A27D143B300CACA9F /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47080927D143B300CACA9F /* ViewControllerFactory.swift */; };
+		FF47080D27D14EB600CACA9F /* Inputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47080C27D14EB600CACA9F /* Inputs.swift */; };
+		FF47080F27D160E400CACA9F /* WaterBucketChallengeSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47080E27D160E400CACA9F /* WaterBucketChallengeSolver.swift */; };
+		FF47081127D161D500CACA9F /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47081027D161D500CACA9F /* Bucket.swift */; };
 		FF4B00AF27D116B900C58220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B00AE27D116B900C58220 /* AppDelegate.swift */; };
 		FF4B00B127D116B900C58220 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B00B027D116B900C58220 /* SceneDelegate.swift */; };
-		FF4B00B327D116B900C58220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B00B227D116B900C58220 /* ViewController.swift */; };
-		FF4B00B627D116B900C58220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4B00B427D116B900C58220 /* Main.storyboard */; };
 		FF4B00B827D116BA00C58220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4B00B727D116BA00C58220 /* Assets.xcassets */; };
 		FF4B00BB27D116BA00C58220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4B00B927D116BA00C58220 /* LaunchScreen.storyboard */; };
+		FF4B00C627D116F200C58220 /* InputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B00C527D116F200C58220 /* InputsViewController.swift */; };
+		FFC3BA9F27D217A4002B563C /* WaterBucketChallengeSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BA9E27D217A4002B563C /* WaterBucketChallengeSolverTests.swift */; };
+		FFC3BAA327D22111002B563C /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA227D22111002B563C /* SolutionViewController.swift */; };
+		FFC3BAA527D22118002B563C /* SolutionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA427D22118002B563C /* SolutionInteractor.swift */; };
+		FFC3BAA727D2211E002B563C /* SolutionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA627D2211E002B563C /* SolutionPresenter.swift */; };
+		FFC3BAA927D22125002B563C /* SolutionDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA827D22125002B563C /* SolutionDataFlow.swift */; };
+		FFC3BAAB27D2212E002B563C /* SolutionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAA27D2212E002B563C /* SolutionFactory.swift */; };
+		FFC3BAAD27D22319002B563C /* InputsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAC27D22319002B563C /* InputsRouter.swift */; };
+		FFC3BAAF27D22C04002B563C /* RootFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAE27D22C04002B563C /* RootFactory.swift */; };
+		FFC3BD2227D262C6002B563C /* SolutionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BD2127D262C5002B563C /* SolutionItemCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF47081A27D215F700CACA9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4B00A327D116B900C58220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4B00AA27D116B900C58220;
+			remoteInfo = WaterBucketChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4AA5FFD717B62FB52518BED4 /* Pods_WaterBucketChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterBucketChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F03E8AF8208DE5B3089EBE /* Pods-WaterBucketChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterBucketChallenge.release.xcconfig"; path = "Target Support Files/Pods-WaterBucketChallenge/Pods-WaterBucketChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		5C38180CE3510A01F1ED7244 /* Pods-WaterBucketChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterBucketChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-WaterBucketChallengeTests/Pods-WaterBucketChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		95983E0A94F9CB143549DFF2 /* Pods_WaterBucketChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterBucketChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A6DF38FB82FF86052B3295 /* Pods-WaterBucketChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterBucketChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-WaterBucketChallengeTests/Pods-WaterBucketChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		FAF2510D467C27D24911D441 /* Pods-WaterBucketChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterBucketChallenge.debug.xcconfig"; path = "Target Support Files/Pods-WaterBucketChallenge/Pods-WaterBucketChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		FF26FDFA27D2B76E000D94EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FF26FDFC27D2B960000D94EC /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		FF47080027D13E3900CACA9F /* InputsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsInteractor.swift; sourceTree = "<group>"; };
+		FF47080227D13E3F00CACA9F /* InputsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsPresenter.swift; sourceTree = "<group>"; };
+		FF47080427D1404E00CACA9F /* InputsDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsDataFlow.swift; sourceTree = "<group>"; };
+		FF47080627D143A400CACA9F /* InputsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsFactory.swift; sourceTree = "<group>"; };
+		FF47080927D143B300CACA9F /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		FF47080C27D14EB600CACA9F /* Inputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inputs.swift; sourceTree = "<group>"; };
+		FF47080E27D160E400CACA9F /* WaterBucketChallengeSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBucketChallengeSolver.swift; sourceTree = "<group>"; };
+		FF47081027D161D500CACA9F /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
+		FF47081627D215F700CACA9F /* WaterBucketChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterBucketChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4B00AB27D116B900C58220 /* WaterBucketChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterBucketChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4B00AE27D116B900C58220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF4B00B027D116B900C58220 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF4B00B227D116B900C58220 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF4B00B527D116B900C58220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF4B00B727D116BA00C58220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF4B00BA27D116BA00C58220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF4B00BC27D116BA00C58220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4B00C527D116F200C58220 /* InputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsViewController.swift; sourceTree = "<group>"; };
+		FFC3BA9E27D217A4002B563C /* WaterBucketChallengeSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBucketChallengeSolverTests.swift; sourceTree = "<group>"; };
+		FFC3BAA227D22111002B563C /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
+		FFC3BAA427D22118002B563C /* SolutionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionInteractor.swift; sourceTree = "<group>"; };
+		FFC3BAA627D2211E002B563C /* SolutionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionPresenter.swift; sourceTree = "<group>"; };
+		FFC3BAA827D22125002B563C /* SolutionDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionDataFlow.swift; sourceTree = "<group>"; };
+		FFC3BAAA27D2212E002B563C /* SolutionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionFactory.swift; sourceTree = "<group>"; };
+		FFC3BAAC27D22319002B563C /* InputsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsRouter.swift; sourceTree = "<group>"; };
+		FFC3BAAE27D22C04002B563C /* RootFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFactory.swift; sourceTree = "<group>"; };
+		FFC3BD2127D262C5002B563C /* SolutionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF47081327D215F700CACA9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25392F40B13DF00B11F51013 /* Pods_WaterBucketChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF4B00A827D116B900C58220 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C01188E1E4103C1C5390B55 /* Pods_WaterBucketChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E444C6B10DE856C6266AE88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95983E0A94F9CB143549DFF2 /* Pods_WaterBucketChallenge.framework */,
+				4AA5FFD717B62FB52518BED4 /* Pods_WaterBucketChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A56A1CC7D9D254318E6589D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2510D467C27D24911D441 /* Pods-WaterBucketChallenge.debug.xcconfig */,
+				56F03E8AF8208DE5B3089EBE /* Pods-WaterBucketChallenge.release.xcconfig */,
+				5C38180CE3510A01F1ED7244 /* Pods-WaterBucketChallengeTests.debug.xcconfig */,
+				C6A6DF38FB82FF86052B3295 /* Pods-WaterBucketChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF47080827D143AC00CACA9F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FF47080927D143B300CACA9F /* ViewControllerFactory.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FF47081727D215F700CACA9F /* WaterBucketChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3BA9E27D217A4002B563C /* WaterBucketChallengeSolverTests.swift */,
+			);
+			path = WaterBucketChallengeTests;
+			sourceTree = "<group>";
+		};
 		FF4B00A227D116B900C58220 = {
 			isa = PBXGroup;
 			children = (
 				FF4B00AD27D116B900C58220 /* WaterBucketChallenge */,
+				FF47081727D215F700CACA9F /* WaterBucketChallengeTests */,
 				FF4B00AC27D116B900C58220 /* Products */,
+				A56A1CC7D9D254318E6589D5 /* Pods */,
+				8E444C6B10DE856C6266AE88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FF4B00AB27D116B900C58220 /* WaterBucketChallenge.app */,
+				FF47081627D215F700CACA9F /* WaterBucketChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,27 +160,122 @@
 		FF4B00AD27D116B900C58220 /* WaterBucketChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				FF4B00AE27D116B900C58220 /* AppDelegate.swift */,
-				FF4B00B027D116B900C58220 /* SceneDelegate.swift */,
-				FF4B00B227D116B900C58220 /* ViewController.swift */,
-				FF4B00B427D116B900C58220 /* Main.storyboard */,
-				FF4B00B727D116BA00C58220 /* Assets.xcassets */,
-				FF4B00B927D116BA00C58220 /* LaunchScreen.storyboard */,
-				FF4B00BC27D116BA00C58220 /* Info.plist */,
+				FF7C62C627D2B628004E13BA /* Resources */,
+				FF4B00C727D119A300C58220 /* App */,
+				FFC3BD2427D29058002B563C /* Workers */,
+				FFC3BD2327D29040002B563C /* Models */,
+				FF47080827D143AC00CACA9F /* Core */,
+				FF4B00C227D116D200C58220 /* Screens */,
 			);
 			path = WaterBucketChallenge;
+			sourceTree = "<group>";
+		};
+		FF4B00C227D116D200C58220 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B00C327D116DE00C58220 /* Inputs */,
+				FF4B00C427D116E600C58220 /* Solution */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FF4B00C327D116DE00C58220 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B00C527D116F200C58220 /* InputsViewController.swift */,
+				FF47080027D13E3900CACA9F /* InputsInteractor.swift */,
+				FF47080227D13E3F00CACA9F /* InputsPresenter.swift */,
+				FF47080427D1404E00CACA9F /* InputsDataFlow.swift */,
+				FF47080627D143A400CACA9F /* InputsFactory.swift */,
+				FFC3BAAC27D22319002B563C /* InputsRouter.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		FF4B00C427D116E600C58220 /* Solution */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3BAA227D22111002B563C /* SolutionViewController.swift */,
+				FFC3BAA427D22118002B563C /* SolutionInteractor.swift */,
+				FFC3BAA627D2211E002B563C /* SolutionPresenter.swift */,
+				FFC3BAA827D22125002B563C /* SolutionDataFlow.swift */,
+				FFC3BAAA27D2212E002B563C /* SolutionFactory.swift */,
+				FFC3BD2127D262C5002B563C /* SolutionItemCell.swift */,
+			);
+			path = Solution;
+			sourceTree = "<group>";
+		};
+		FF4B00C727D119A300C58220 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B00B027D116B900C58220 /* SceneDelegate.swift */,
+				FF4B00AE27D116B900C58220 /* AppDelegate.swift */,
+				FFC3BAAE27D22C04002B563C /* RootFactory.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FF7C62C627D2B628004E13BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF26FDFC27D2B960000D94EC /* Strings+Generated.swift */,
+				FF26FDF927D2B76E000D94EC /* Localizable.strings */,
+				FF4B00BC27D116BA00C58220 /* Info.plist */,
+				FF4B00B927D116BA00C58220 /* LaunchScreen.storyboard */,
+				FF4B00B727D116BA00C58220 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFC3BD2327D29040002B563C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF47081027D161D500CACA9F /* Bucket.swift */,
+				FF47080C27D14EB600CACA9F /* Inputs.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFC3BD2427D29058002B563C /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				FF47080E27D160E400CACA9F /* WaterBucketChallengeSolver.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF47081527D215F700CACA9F /* WaterBucketChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF47081C27D215F700CACA9F /* Build configuration list for PBXNativeTarget "WaterBucketChallengeTests" */;
+			buildPhases = (
+				A1CDEF6D46AC339DDA38ADD8 /* [CP] Check Pods Manifest.lock */,
+				FF47081227D215F700CACA9F /* Sources */,
+				FF47081327D215F700CACA9F /* Frameworks */,
+				FF47081427D215F700CACA9F /* Resources */,
+				F179719648E5DFB448E77980 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF47081B27D215F700CACA9F /* PBXTargetDependency */,
+			);
+			name = WaterBucketChallengeTests;
+			productName = WaterBucketChallengeTests;
+			productReference = FF47081627D215F700CACA9F /* WaterBucketChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FF4B00AA27D116B900C58220 /* WaterBucketChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF4B00BF27D116BA00C58220 /* Build configuration list for PBXNativeTarget "WaterBucketChallenge" */;
 			buildPhases = (
+				F04B672E3D7ABF8E1B81E41E /* [CP] Check Pods Manifest.lock */,
 				FF4B00A727D116B900C58220 /* Sources */,
 				FF4B00A827D116B900C58220 /* Frameworks */,
 				FF4B00A927D116B900C58220 /* Resources */,
+				B59357061BB74527712DA5A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +296,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					FF47081527D215F700CACA9F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FF4B00AA27D116B900C58220;
+					};
 					FF4B00AA27D116B900C58220 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -116,43 +319,165 @@
 			projectRoot = "";
 			targets = (
 				FF4B00AA27D116B900C58220 /* WaterBucketChallenge */,
+				FF47081527D215F700CACA9F /* WaterBucketChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF47081427D215F700CACA9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF4B00A927D116B900C58220 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FF4B00BB27D116BA00C58220 /* LaunchScreen.storyboard in Resources */,
+				FF26FDFB27D2B76E000D94EC /* Localizable.strings in Resources */,
 				FF4B00B827D116BA00C58220 /* Assets.xcassets in Resources */,
-				FF4B00B627D116B900C58220 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A1CDEF6D46AC339DDA38ADD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterBucketChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59357061BB74527712DA5A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterBucketChallenge/Pods-WaterBucketChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterBucketChallenge/Pods-WaterBucketChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaterBucketChallenge/Pods-WaterBucketChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04B672E3D7ABF8E1B81E41E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterBucketChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F179719648E5DFB448E77980 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterBucketChallengeTests/Pods-WaterBucketChallengeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterBucketChallengeTests/Pods-WaterBucketChallengeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaterBucketChallengeTests/Pods-WaterBucketChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		FF47081227D215F700CACA9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC3BA9F27D217A4002B563C /* WaterBucketChallengeSolverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF4B00A727D116B900C58220 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF4B00B327D116B900C58220 /* ViewController.swift in Sources */,
+				FFC3BAA927D22125002B563C /* SolutionDataFlow.swift in Sources */,
+				FF47080F27D160E400CACA9F /* WaterBucketChallengeSolver.swift in Sources */,
+				FF47080727D143A400CACA9F /* InputsFactory.swift in Sources */,
+				FF47081127D161D500CACA9F /* Bucket.swift in Sources */,
+				FFC3BAA527D22118002B563C /* SolutionInteractor.swift in Sources */,
+				FFC3BAAD27D22319002B563C /* InputsRouter.swift in Sources */,
+				FF47080527D1404E00CACA9F /* InputsDataFlow.swift in Sources */,
+				FFC3BAA327D22111002B563C /* SolutionViewController.swift in Sources */,
 				FF4B00AF27D116B900C58220 /* AppDelegate.swift in Sources */,
 				FF4B00B127D116B900C58220 /* SceneDelegate.swift in Sources */,
+				FF26FDFD27D2B960000D94EC /* Strings+Generated.swift in Sources */,
+				FF47080127D13E3900CACA9F /* InputsInteractor.swift in Sources */,
+				FF47080D27D14EB600CACA9F /* Inputs.swift in Sources */,
+				FF47080A27D143B300CACA9F /* ViewControllerFactory.swift in Sources */,
+				FFC3BAA727D2211E002B563C /* SolutionPresenter.swift in Sources */,
+				FF47080327D13E3F00CACA9F /* InputsPresenter.swift in Sources */,
+				FF4B00C627D116F200C58220 /* InputsViewController.swift in Sources */,
+				FFC3BD2227D262C6002B563C /* SolutionItemCell.swift in Sources */,
+				FFC3BAAF27D22C04002B563C /* RootFactory.swift in Sources */,
+				FFC3BAAB27D2212E002B563C /* SolutionFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FF47081B27D215F700CACA9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4B00AA27D116B900C58220 /* WaterBucketChallenge */;
+			targetProxy = FF47081A27D215F700CACA9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		FF4B00B427D116B900C58220 /* Main.storyboard */ = {
+		FF26FDF927D2B76E000D94EC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FF4B00B527D116B900C58220 /* Base */,
+				FF26FDFA27D2B76E000D94EC /* Base */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		FF4B00B927D116BA00C58220 /* LaunchScreen.storyboard */ = {
@@ -166,6 +491,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FF47081D27D215F700CACA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C38180CE3510A01F1ED7244 /* Pods-WaterBucketChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = comv.vdumanov.WaterBucketChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterBucketChallenge.app/WaterBucketChallenge";
+			};
+			name = Debug;
+		};
+		FF47081E27D215F700CACA9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A6DF38FB82FF86052B3295 /* Pods-WaterBucketChallengeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = comv.vdumanov.WaterBucketChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterBucketChallenge.app/WaterBucketChallenge";
+			};
+			name = Release;
+		};
 		FF4B00BD27D116BA00C58220 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,16 +645,16 @@
 		};
 		FF4B00C027D116BA00C58220 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF2510D467C27D24911D441 /* Pods-WaterBucketChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WaterBucketChallenge/Info.plist;
+				INFOPLIST_FILE = WaterBucketChallenge/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,16 +672,16 @@
 		};
 		FF4B00C127D116BA00C58220 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F03E8AF8208DE5B3089EBE /* Pods-WaterBucketChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WaterBucketChallenge/Info.plist;
+				INFOPLIST_FILE = WaterBucketChallenge/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +700,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF47081C27D215F700CACA9F /* Build configuration list for PBXNativeTarget "WaterBucketChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF47081D27D215F700CACA9F /* Debug */,
+				FF47081E27D215F700CACA9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF4B00A627D116B900C58220 /* Build configuration list for PBXProject "WaterBucketChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
