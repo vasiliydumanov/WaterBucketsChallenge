@@ -24,15 +24,27 @@
 		FF4B00B827D116BA00C58220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4B00B727D116BA00C58220 /* Assets.xcassets */; };
 		FF4B00BB27D116BA00C58220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4B00B927D116BA00C58220 /* LaunchScreen.storyboard */; };
 		FF4B00C627D116F200C58220 /* InputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B00C527D116F200C58220 /* InputsViewController.swift */; };
+		FF6ED04B27D7DD6C00217D53 /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED04A27D7DD6C00217D53 /* SolutionViewController.swift */; };
+		FF6ED04D27D7DD7700217D53 /* SolutionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED04C27D7DD7700217D53 /* SolutionInteractor.swift */; };
+		FF6ED04F27D7DD8600217D53 /* SolutionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED04E27D7DD8600217D53 /* SolutionPresenter.swift */; };
+		FF6ED05127D7DD8F00217D53 /* SolutionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED05027D7DD8F00217D53 /* SolutionFactory.swift */; };
+		FF6ED05327D7DD9C00217D53 /* SolutionDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED05227D7DD9C00217D53 /* SolutionDataFlow.swift */; };
+		FF6ED05527D7DDA500217D53 /* SolutionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED05427D7DDA500217D53 /* SolutionRouter.swift */; };
+		FFBA130A27D7EAB900BE0006 /* AnimatedSolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA130927D7EAB900BE0006 /* AnimatedSolutionViewController.swift */; };
+		FFBA130C27D7EAC100BE0006 /* AnimatedSolutionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA130B27D7EAC100BE0006 /* AnimatedSolutionInteractor.swift */; };
+		FFBA130E27D7EACA00BE0006 /* AnimatedSolutionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA130D27D7EACA00BE0006 /* AnimatedSolutionPresenter.swift */; };
+		FFBA131027D7EAD000BE0006 /* AnimatedSolutionDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA130F27D7EAD000BE0006 /* AnimatedSolutionDataFlow.swift */; };
+		FFBA131227D7EAD700BE0006 /* AnimatedSolutionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA131127D7EAD700BE0006 /* AnimatedSolutionFactory.swift */; };
+		FFBA131527D7EF8A00BE0006 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA131427D7EF8A00BE0006 /* UIViewController+Extensions.swift */; };
 		FFC3BA9F27D217A4002B563C /* WaterBucketChallengeSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BA9E27D217A4002B563C /* WaterBucketChallengeSolverTests.swift */; };
-		FFC3BAA327D22111002B563C /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA227D22111002B563C /* SolutionViewController.swift */; };
-		FFC3BAA527D22118002B563C /* SolutionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA427D22118002B563C /* SolutionInteractor.swift */; };
-		FFC3BAA727D2211E002B563C /* SolutionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA627D2211E002B563C /* SolutionPresenter.swift */; };
-		FFC3BAA927D22125002B563C /* SolutionDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA827D22125002B563C /* SolutionDataFlow.swift */; };
-		FFC3BAAB27D2212E002B563C /* SolutionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAA27D2212E002B563C /* SolutionFactory.swift */; };
+		FFC3BAA327D22111002B563C /* TableSolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA227D22111002B563C /* TableSolutionViewController.swift */; };
+		FFC3BAA527D22118002B563C /* TableSolutionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA427D22118002B563C /* TableSolutionInteractor.swift */; };
+		FFC3BAA727D2211E002B563C /* TableSolutionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA627D2211E002B563C /* TableSolutionPresenter.swift */; };
+		FFC3BAA927D22125002B563C /* TableSolutionDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAA827D22125002B563C /* TableSolutionDataFlow.swift */; };
+		FFC3BAAB27D2212E002B563C /* TableSolutionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAA27D2212E002B563C /* TableSolutionFactory.swift */; };
 		FFC3BAAD27D22319002B563C /* InputsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAC27D22319002B563C /* InputsRouter.swift */; };
 		FFC3BAAF27D22C04002B563C /* RootFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAE27D22C04002B563C /* RootFactory.swift */; };
-		FFC3BD2227D262C6002B563C /* SolutionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BD2127D262C5002B563C /* SolutionItemCell.swift */; };
+		FFC3BD2227D262C6002B563C /* TableSolutionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BD2127D262C5002B563C /* TableSolutionItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,15 +82,27 @@
 		FF4B00BA27D116BA00C58220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF4B00BC27D116BA00C58220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4B00C527D116F200C58220 /* InputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsViewController.swift; sourceTree = "<group>"; };
+		FF6ED04A27D7DD6C00217D53 /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
+		FF6ED04C27D7DD7700217D53 /* SolutionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionInteractor.swift; sourceTree = "<group>"; };
+		FF6ED04E27D7DD8600217D53 /* SolutionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionPresenter.swift; sourceTree = "<group>"; };
+		FF6ED05027D7DD8F00217D53 /* SolutionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionFactory.swift; sourceTree = "<group>"; };
+		FF6ED05227D7DD9C00217D53 /* SolutionDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionDataFlow.swift; sourceTree = "<group>"; };
+		FF6ED05427D7DDA500217D53 /* SolutionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionRouter.swift; sourceTree = "<group>"; };
+		FFBA130927D7EAB900BE0006 /* AnimatedSolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSolutionViewController.swift; sourceTree = "<group>"; };
+		FFBA130B27D7EAC100BE0006 /* AnimatedSolutionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSolutionInteractor.swift; sourceTree = "<group>"; };
+		FFBA130D27D7EACA00BE0006 /* AnimatedSolutionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSolutionPresenter.swift; sourceTree = "<group>"; };
+		FFBA130F27D7EAD000BE0006 /* AnimatedSolutionDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSolutionDataFlow.swift; sourceTree = "<group>"; };
+		FFBA131127D7EAD700BE0006 /* AnimatedSolutionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSolutionFactory.swift; sourceTree = "<group>"; };
+		FFBA131427D7EF8A00BE0006 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		FFC3BA9E27D217A4002B563C /* WaterBucketChallengeSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBucketChallengeSolverTests.swift; sourceTree = "<group>"; };
-		FFC3BAA227D22111002B563C /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
-		FFC3BAA427D22118002B563C /* SolutionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionInteractor.swift; sourceTree = "<group>"; };
-		FFC3BAA627D2211E002B563C /* SolutionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionPresenter.swift; sourceTree = "<group>"; };
-		FFC3BAA827D22125002B563C /* SolutionDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionDataFlow.swift; sourceTree = "<group>"; };
-		FFC3BAAA27D2212E002B563C /* SolutionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionFactory.swift; sourceTree = "<group>"; };
+		FFC3BAA227D22111002B563C /* TableSolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSolutionViewController.swift; sourceTree = "<group>"; };
+		FFC3BAA427D22118002B563C /* TableSolutionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSolutionInteractor.swift; sourceTree = "<group>"; };
+		FFC3BAA627D2211E002B563C /* TableSolutionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSolutionPresenter.swift; sourceTree = "<group>"; };
+		FFC3BAA827D22125002B563C /* TableSolutionDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSolutionDataFlow.swift; sourceTree = "<group>"; };
+		FFC3BAAA27D2212E002B563C /* TableSolutionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSolutionFactory.swift; sourceTree = "<group>"; };
 		FFC3BAAC27D22319002B563C /* InputsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsRouter.swift; sourceTree = "<group>"; };
 		FFC3BAAE27D22C04002B563C /* RootFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFactory.swift; sourceTree = "<group>"; };
-		FFC3BD2127D262C5002B563C /* SolutionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionItemCell.swift; sourceTree = "<group>"; };
+		FFC3BD2127D262C5002B563C /* TableSolutionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSolutionItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +184,7 @@
 		FF4B00AD27D116B900C58220 /* WaterBucketChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				FFBA131327D7EF7B00BE0006 /* Common */,
 				FF7C62C627D2B628004E13BA /* Resources */,
 				FF4B00C727D119A300C58220 /* App */,
 				FFC3BD2427D29058002B563C /* Workers */,
@@ -195,12 +220,14 @@
 		FF4B00C427D116E600C58220 /* Solution */ = {
 			isa = PBXGroup;
 			children = (
-				FFC3BAA227D22111002B563C /* SolutionViewController.swift */,
-				FFC3BAA427D22118002B563C /* SolutionInteractor.swift */,
-				FFC3BAA627D2211E002B563C /* SolutionPresenter.swift */,
-				FFC3BAA827D22125002B563C /* SolutionDataFlow.swift */,
-				FFC3BAAA27D2212E002B563C /* SolutionFactory.swift */,
-				FFC3BD2127D262C5002B563C /* SolutionItemCell.swift */,
+				FF6ED03F27D7D9DB00217D53 /* Animated */,
+				FF6ED03E27D7D9CF00217D53 /* Table */,
+				FF6ED04A27D7DD6C00217D53 /* SolutionViewController.swift */,
+				FF6ED04C27D7DD7700217D53 /* SolutionInteractor.swift */,
+				FF6ED04E27D7DD8600217D53 /* SolutionPresenter.swift */,
+				FF6ED05027D7DD8F00217D53 /* SolutionFactory.swift */,
+				FF6ED05227D7DD9C00217D53 /* SolutionDataFlow.swift */,
+				FF6ED05427D7DDA500217D53 /* SolutionRouter.swift */,
 			);
 			path = Solution;
 			sourceTree = "<group>";
@@ -215,6 +242,31 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		FF6ED03E27D7D9CF00217D53 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3BAA227D22111002B563C /* TableSolutionViewController.swift */,
+				FFC3BAA427D22118002B563C /* TableSolutionInteractor.swift */,
+				FFC3BAA627D2211E002B563C /* TableSolutionPresenter.swift */,
+				FFC3BAA827D22125002B563C /* TableSolutionDataFlow.swift */,
+				FFC3BAAA27D2212E002B563C /* TableSolutionFactory.swift */,
+				FFC3BD2127D262C5002B563C /* TableSolutionItemCell.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		FF6ED03F27D7D9DB00217D53 /* Animated */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA130927D7EAB900BE0006 /* AnimatedSolutionViewController.swift */,
+				FFBA130B27D7EAC100BE0006 /* AnimatedSolutionInteractor.swift */,
+				FFBA130D27D7EACA00BE0006 /* AnimatedSolutionPresenter.swift */,
+				FFBA130F27D7EAD000BE0006 /* AnimatedSolutionDataFlow.swift */,
+				FFBA131127D7EAD700BE0006 /* AnimatedSolutionFactory.swift */,
+			);
+			path = Animated;
+			sourceTree = "<group>";
+		};
 		FF7C62C627D2B628004E13BA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +277,14 @@
 				FF4B00B727D116BA00C58220 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFBA131327D7EF7B00BE0006 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FFBA131427D7EF8A00BE0006 /* UIViewController+Extensions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		FFC3BD2327D29040002B563C /* Models */ = {
@@ -438,26 +498,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFC3BAA927D22125002B563C /* SolutionDataFlow.swift in Sources */,
+				FFC3BAA927D22125002B563C /* TableSolutionDataFlow.swift in Sources */,
+				FFBA131027D7EAD000BE0006 /* AnimatedSolutionDataFlow.swift in Sources */,
 				FF47080F27D160E400CACA9F /* WaterBucketChallengeSolver.swift in Sources */,
 				FF47080727D143A400CACA9F /* InputsFactory.swift in Sources */,
 				FF47081127D161D500CACA9F /* Bucket.swift in Sources */,
-				FFC3BAA527D22118002B563C /* SolutionInteractor.swift in Sources */,
+				FFC3BAA527D22118002B563C /* TableSolutionInteractor.swift in Sources */,
+				FF6ED04B27D7DD6C00217D53 /* SolutionViewController.swift in Sources */,
+				FF6ED05327D7DD9C00217D53 /* SolutionDataFlow.swift in Sources */,
 				FFC3BAAD27D22319002B563C /* InputsRouter.swift in Sources */,
 				FF47080527D1404E00CACA9F /* InputsDataFlow.swift in Sources */,
-				FFC3BAA327D22111002B563C /* SolutionViewController.swift in Sources */,
+				FFC3BAA327D22111002B563C /* TableSolutionViewController.swift in Sources */,
+				FF6ED04D27D7DD7700217D53 /* SolutionInteractor.swift in Sources */,
+				FFBA130A27D7EAB900BE0006 /* AnimatedSolutionViewController.swift in Sources */,
 				FF4B00AF27D116B900C58220 /* AppDelegate.swift in Sources */,
 				FF4B00B127D116B900C58220 /* SceneDelegate.swift in Sources */,
 				FF26FDFD27D2B960000D94EC /* Strings+Generated.swift in Sources */,
+				FF6ED05127D7DD8F00217D53 /* SolutionFactory.swift in Sources */,
 				FF47080127D13E3900CACA9F /* InputsInteractor.swift in Sources */,
 				FF47080D27D14EB600CACA9F /* Inputs.swift in Sources */,
+				FF6ED04F27D7DD8600217D53 /* SolutionPresenter.swift in Sources */,
 				FF47080A27D143B300CACA9F /* ViewControllerFactory.swift in Sources */,
-				FFC3BAA727D2211E002B563C /* SolutionPresenter.swift in Sources */,
+				FFBA130C27D7EAC100BE0006 /* AnimatedSolutionInteractor.swift in Sources */,
+				FFC3BAA727D2211E002B563C /* TableSolutionPresenter.swift in Sources */,
 				FF47080327D13E3F00CACA9F /* InputsPresenter.swift in Sources */,
 				FF4B00C627D116F200C58220 /* InputsViewController.swift in Sources */,
-				FFC3BD2227D262C6002B563C /* SolutionItemCell.swift in Sources */,
+				FFBA130E27D7EACA00BE0006 /* AnimatedSolutionPresenter.swift in Sources */,
+				FFC3BD2227D262C6002B563C /* TableSolutionItemCell.swift in Sources */,
+				FF6ED05527D7DDA500217D53 /* SolutionRouter.swift in Sources */,
+				FFBA131527D7EF8A00BE0006 /* UIViewController+Extensions.swift in Sources */,
+				FFBA131227D7EAD700BE0006 /* AnimatedSolutionFactory.swift in Sources */,
 				FFC3BAAF27D22C04002B563C /* RootFactory.swift in Sources */,
-				FFC3BAAB27D2212E002B563C /* SolutionFactory.swift in Sources */,
+				FFC3BAAB27D2212E002B563C /* TableSolutionFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

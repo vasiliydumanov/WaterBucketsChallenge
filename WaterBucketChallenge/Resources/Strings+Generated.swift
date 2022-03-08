@@ -27,19 +27,27 @@ internal enum L10n {
     internal enum Solution {
       /// Solution
       internal static let title = L10n.tr("Localizable", "Screen.Solution.Title")
-      internal enum StepAction {
-        /// Empty bucket %@
-        internal static func empty(_ p1: Any) -> String {
-          return L10n.tr("Localizable", "Screen.Solution.StepAction.Empty", String(describing: p1))
+      internal enum Table {
+        internal enum StepAction {
+          /// Empty bucket %@
+          internal static func empty(_ p1: Any) -> String {
+            return L10n.tr("Localizable", "Screen.Solution.Table.StepAction.Empty", String(describing: p1))
+          }
+          /// Fill bucket %@
+          internal static func fill(_ p1: Any) -> String {
+            return L10n.tr("Localizable", "Screen.Solution.Table.StepAction.Fill", String(describing: p1))
+          }
+          /// Transfer bucket %@ to bucket %@
+          internal static func transfer(_ p1: Any, _ p2: Any) -> String {
+            return L10n.tr("Localizable", "Screen.Solution.Table.StepAction.Transfer", String(describing: p1), String(describing: p2))
+          }
         }
-        /// Fill bucket %@
-        internal static func fill(_ p1: Any) -> String {
-          return L10n.tr("Localizable", "Screen.Solution.StepAction.Fill", String(describing: p1))
-        }
-        /// Transfer bucket %@ to bucket %@
-        internal static func transfer(_ p1: Any, _ p2: Any) -> String {
-          return L10n.tr("Localizable", "Screen.Solution.StepAction.Transfer", String(describing: p1), String(describing: p2))
-        }
+      }
+      internal enum Tabs {
+        /// Animated
+        internal static let animated = L10n.tr("Localizable", "Screen.Solution.Tabs.Animated")
+        /// Table
+        internal static let table = L10n.tr("Localizable", "Screen.Solution.Tabs.Table")
       }
     }
   }

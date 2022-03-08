@@ -2,60 +2,35 @@
 //  SolutionPresenter.swift
 //  WaterBucketChallenge
 //
-//  Created by Vasiliy Dumanov on 04.03.2022.
+//  Created by Vasiliy Dumanov on 08.03.2022.
 //
 
 protocol SolutionPresentationLogic: AnyObject {
-    func presentSolution(_ response: SolutionDataFlow.Response)
+    func presentContent(_ response: SolutionDataFlow.Content.Response)
+    func presentSelectedTab(_ response: SolutionDataFlow.SelectedTab.Response)
 }
 
 final class SolutionPresenter: SolutionPresentationLogic {
     weak var viewController: SolutionDisplayLogic?
-}
-
-// MARK: - SolutionPresentationLogic
-
-extension SolutionPresenter {
-    func presentSolution(_ response: SolutionDataFlow.Response) {
-        var items: [SolutionSectionItem] = [
-            .init(text: "X", kind: .header),
-            .init(text: "Y", kind: .header),
-            .init(text: "Z", kind: .header)
-        ]
-        
-        for (idx, step) in response.solution.steps.enumerated() {
-            let isLastStep = idx == response.solution.steps.count - 1
-            let isSolvedByX = isLastStep && response.solution.xContainsTargetVolume
-            let isSolvedByY = isLastStep && response.solution.yContainsTargetVolume
-            
-            items.append(contentsOf: [
-                .init(text: "\(step.xFilledVolume)", kind: .filledVolume(isSolution: isSolvedByX)),
-                .init(text: "\(step.yFilledVolume)", kind: .filledVolume(isSolution: isSolvedByY)),
-                .init(text: format(stepAction: step.action), kind: .explanation)
-            ])
-        }
-        
-        let sections = [SolutionSection(items: items)]
-        viewController?.showSolution(.init(sections: sections))
+    
+    // MARK: - SolutionPresentationLogic
+    
+    func presentContent(_ response: SolutionDataFlow.Content.Response) {
+        viewController?.showContent(
+            .init(
+                solution: response.solution,
+                tabNames: [
+                    L10n.Screen.Solution.Tabs.table,
+                    L10n.Screen.Solution.Tabs.animated
+                ],
+                selectedTab: .table,
+                selectedTabIndex: 0
+            )
+        )
     }
-}
-
-// MARK: - Helpers
-
-private extension SolutionPresenter {
-    func format(stepAction: SolutionStep.Action) -> String {
-        switch stepAction {
-        case .empty(let bucket):
-            return L10n.Screen.Solution.StepAction.empty(bucket.rawValue.uppercased())
-        case .fill(let bucket):
-            return L10n.Screen.Solution.StepAction.fill(bucket.rawValue.uppercased())
-        case .transfer(let direction):
-            switch direction {
-            case .fromXToY:
-                return L10n.Screen.Solution.StepAction.transfer("X", "Y")
-            case .fromYToX:
-                return L10n.Screen.Solution.StepAction.transfer("Y", "X")
-            }
-        }
+    
+    func presentSelectedTab(_ response: SolutionDataFlow.SelectedTab.Response) {
+        guard let selectedTab = SolutionRoute.Tab.init(rawValue: response.selectedTabIndex) else { return }
+        viewController?.showSelectedTab(.init(solution: response.solution, selectedTab: selectedTab))
     }
 }

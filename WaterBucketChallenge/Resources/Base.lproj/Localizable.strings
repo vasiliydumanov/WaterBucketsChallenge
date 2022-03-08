@@ -21,7 +21,12 @@
 /* Solution Screen */
 
 "Screen.Solution.Title" = "Solution";
-"Screen.Solution.StepAction.Empty" = "Empty bucket %@";
-"Screen.Solution.StepAction.Fill" = "Fill bucket %@";
-"Screen.Solution.StepAction.Transfer" = "Transfer bucket %@ to bucket %@";
+"Screen.Solution.Tabs.Table" = "Table";
+"Screen.Solution.Tabs.Animated" = "Animated";
+
+/* Table Solution Screen */
+
+"Screen.Solution.Table.StepAction.Empty" = "Empty bucket %@";
+"Screen.Solution.Table.StepAction.Fill" = "Fill bucket %@";
+"Screen.Solution.Table.StepAction.Transfer" = "Transfer bucket %@ to bucket %@";
 

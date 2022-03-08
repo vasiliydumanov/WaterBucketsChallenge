@@ -7,12 +7,12 @@
 
 import UIKit
 
-struct SolutionItemCellViewModel {
+struct TableSolutionItemCellViewModel {
     let text: NSAttributedString
 }
 
-final class SolutionItemCell: UICollectionViewCell {
-    static let reuseID = "SolutionItemCell"
+final class TableSolutionItemCell: UICollectionViewCell {
+    static let reuseID = "TableSolutionItemCell"
     
     private enum Constants {
         static let textLabelInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
@@ -40,14 +40,14 @@ final class SolutionItemCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(with viewModel: SolutionItemCellViewModel) {
+    func configure(with viewModel: TableSolutionItemCellViewModel) {
         textLabel.attributedText = viewModel.text
     }
 }
 
 // MARK: - Setup
 
-private extension SolutionItemCell {
+private extension TableSolutionItemCell {
     func addSubviews() {
         contentView.addSubview(textLabel)
     }
