@@ -8,6 +8,7 @@
 import UIKit
 
 protocol SolutionDisplayLogic: AnyObject {
+    func showTitle(_ viewModel: SolutionDataFlow.Title.ViewModel)
     func showContent(_ viewModel: SolutionDataFlow.Content.ViewModel)
     func showSelectedTab(_ viewModel: SolutionDataFlow.SelectedTab.ViewModel)
 }
@@ -57,13 +58,17 @@ final class SolutionViewController: UIViewController, SolutionDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = L10n.Screen.Solution.title
         addSubviews()
         makeConstraints()
+        interactor.requestTitle()
         interactor.requestContent()
     }
     
     // MARK: - SolutionDisplayLogic
+    
+    func showTitle(_ viewModel: SolutionDataFlow.Title.ViewModel) {
+        title = viewModel.title
+    }
     
     func showContent(_ viewModel: SolutionDataFlow.Content.ViewModel) {
         tabsView.removeAllSegments()
@@ -78,11 +83,23 @@ final class SolutionViewController: UIViewController, SolutionDisplayLogic {
             )
         }
         tabsView.selectedSegmentIndex = viewModel.selectedTabIndex
-        router.navigate(to: .tab(viewModel.selectedTab, solution: viewModel.solution, tabsContainer: tabsContainer))
+        router.navigate(
+            to: .tab(
+                viewModel.selectedTab,
+                solutionWithInputs: viewModel.solutionWithInputs,
+                tabsContainer: tabsContainer
+            )
+        )
     }
     
     func showSelectedTab(_ viewModel: SolutionDataFlow.SelectedTab.ViewModel) {
-        router.navigate(to: .tab(viewModel.selectedTab, solution: viewModel.solution, tabsContainer: tabsContainer))
+        router.navigate(
+            to: .tab(
+                viewModel.selectedTab,
+                solutionWithInputs: viewModel.solutionWithInputs,
+                tabsContainer: tabsContainer
+            )
+        )
     }
 }
 

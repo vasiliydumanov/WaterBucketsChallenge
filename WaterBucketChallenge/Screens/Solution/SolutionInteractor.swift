@@ -6,26 +6,36 @@
 //
 
 protocol SolutionBusinessLogic: AnyObject {
+    func requestTitle()
     func requestContent()
     func requestSelectedTab(_ request: SolutionDataFlow.SelectedTab.Request)
 }
 
 final class SolutionInteractor: SolutionBusinessLogic {
-    private let solution: Solution
+    private let solutionWithInputs: SolutionWithInputs
     private let presenter: SolutionPresentationLogic
     
-    init(solution: Solution, presenter: SolutionPresentationLogic) {
-        self.solution = solution
+    init(solutionWithInputs: SolutionWithInputs, presenter: SolutionPresentationLogic) {
+        self.solutionWithInputs = solutionWithInputs
         self.presenter = presenter
     }
     
     // MARK: - SolutionBusinessLogic
+    
+    func requestTitle() {
+        presenter.presentTitle(.init(inputs: solutionWithInputs.inputs))
+    }
 
     func requestContent() {
-        presenter.presentContent(.init(solution: solution))
+        presenter.presentContent(.init(solutionWithInputs: solutionWithInputs))
     }
     
     func requestSelectedTab(_ request: SolutionDataFlow.SelectedTab.Request) {
-        presenter.presentSelectedTab(.init(solution: solution, selectedTabIndex: request.selectedTabIndex))
+        presenter.presentSelectedTab(
+            .init(
+                solutionWithInputs: solutionWithInputs,
+                selectedTabIndex: request.selectedTabIndex
+            )
+        )
     }
 }

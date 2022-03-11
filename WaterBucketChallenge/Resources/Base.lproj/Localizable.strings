@@ -20,7 +20,6 @@
 
 /* Solution Screen */
 
-"Screen.Solution.Title" = "Solution";
 "Screen.Solution.Tabs.Table" = "Table";
 "Screen.Solution.Tabs.Animated" = "Animated";
 
@@ -29,4 +28,9 @@
 "Screen.Solution.Table.StepAction.Empty" = "Empty bucket %@";
 "Screen.Solution.Table.StepAction.Fill" = "Fill bucket %@";
 "Screen.Solution.Table.StepAction.Transfer" = "Transfer bucket %@ to bucket %@";
+
+/* Animated Solution Screen */
+
+"Screen.Solution.Animated.StartAnimation" = "Start Animation";
+"Screen.Solution.Animated.ResetAnimation" = "Reset Animation";
 

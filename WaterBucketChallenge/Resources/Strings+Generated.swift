@@ -25,8 +25,12 @@ internal enum L10n {
       }
     }
     internal enum Solution {
-      /// Solution
-      internal static let title = L10n.tr("Localizable", "Screen.Solution.Title")
+      internal enum Animated {
+        /// Reset Animation
+        internal static let resetAnimation = L10n.tr("Localizable", "Screen.Solution.Animated.ResetAnimation")
+        /// Start Animation
+        internal static let startAnimation = L10n.tr("Localizable", "Screen.Solution.Animated.StartAnimation")
+      }
       internal enum Table {
         internal enum StepAction {
           /// Empty bucket %@

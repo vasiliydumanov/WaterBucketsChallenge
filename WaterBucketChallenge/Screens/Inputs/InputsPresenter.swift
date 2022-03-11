@@ -26,7 +26,7 @@ extension InputsPresenter {
         
         switch response.solution {
         case .success(let solution):
-            viewModel = .solved(solution)
+            viewModel = .solved(.init(inputs: response.inputs, solution: solution))
         case .failure(let error):
             let message: String = {
                 switch error {

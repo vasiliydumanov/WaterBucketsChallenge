@@ -8,7 +8,7 @@
 import UIKit
 
 enum InputsRoute {
-    case solution(Solution)
+    case solution(SolutionWithInputs)
 }
 
 protocol InputsRoutingLogic {
@@ -24,8 +24,8 @@ final class InputsRouter {
 extension InputsRouter: InputsRoutingLogic {
     func navigate(to route: InputsRoute) {
         switch route {
-        case .solution(let solution):
-            let solutionViewController = SolutionFactory.build(solution)
+        case .solution(let solutionWithInputs):
+            let solutionViewController = SolutionFactory.build(solutionWithInputs)
             viewController?.navigationController?.pushViewController(solutionViewController, animated: true)
         }
     }

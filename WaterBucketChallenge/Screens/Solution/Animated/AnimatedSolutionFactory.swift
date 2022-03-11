@@ -6,9 +6,12 @@
 //
 
 final class AnimatedSolutionFactory: ViewControllerFactory {
-    static func build(_ solution: Solution) -> AnimatedSolutionViewController {
+    static func build(_ solutionWithInputs: SolutionWithInputs) -> AnimatedSolutionViewController {
         let presenter = AnimatedSolutionPresenter()
-        let interactor = AnimatedSolutionInteractor(solution: solution, presenter: presenter)
+        let interactor = AnimatedSolutionInteractor(
+            solutionWithInputs: solutionWithInputs,
+            presenter: presenter
+        )
         let viewController = AnimatedSolutionViewController(interactor: interactor)
         presenter.viewController = viewController
         return viewController

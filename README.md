@@ -14,6 +14,9 @@ pod install
 
 * Open `WaterBucketChallenge.xcworkspace` in **XCode**
 * Build and run `WaterBucketChallenge` target
+* Enter X, Y, Z inputs and tap "Solve"
+* If riddle can be solved using the given inputs, you will be taken to the animated solution screen. Tap "Start Animation" to see step by step solution animation sequence. Tap "Reset Animation" to get to the initial state
+* If you want to see step by step solution in table form, navigate to "Table" tab
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

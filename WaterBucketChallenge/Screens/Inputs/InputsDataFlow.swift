@@ -30,11 +30,12 @@ enum InputsDataFlow {
         }
         
         struct Response {
+            let inputs: Inputs
             let solution: Result<Solution, SolutionError>
         }
         
         enum ViewModel {
-            case solved(Solution)
+            case solved(SolutionWithInputs)
             case notSolvable(message: String)
         }
     }

@@ -93,8 +93,8 @@ extension InputsViewController {
     
     func showSolution(_ viewModel: InputsDataFlow.Solve.ViewModel) {
         switch viewModel {
-        case .solved(let solution):
-            router.navigate(to: .solution(solution))
+        case .solved(let solutionWithInputs):
+            router.navigate(to: .solution(solutionWithInputs))
         case .notSolvable(let message):
             let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
             alert.addAction(.init(title: L10n.Screen.Inputs.Alert.buttonTitle, style: .cancel))

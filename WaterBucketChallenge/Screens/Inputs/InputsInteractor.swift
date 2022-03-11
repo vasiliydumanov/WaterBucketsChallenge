@@ -38,8 +38,10 @@ extension InputsInteractor {
             let y = request.rawInputs.y.flatMap(UInt.init),
             let z = request.rawInputs.z.flatMap(UInt.init)
         else { return }
+         
+        let inputs = Inputs(x: x, y: y, z: z)
+        let solution = solver.solve(for: inputs)
         
-        let solution = solver.solve(for: Inputs(x: x, y: y, z: z))
-        presenter.presentSolution(.init(solution: solution))
+        presenter.presentSolution(.init(inputs: inputs, solution: solution))
     }
 }

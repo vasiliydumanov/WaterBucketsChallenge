@@ -8,11 +8,11 @@
 import UIKit
 
 enum SolutionRoute {
-    case tab(Tab, solution: Solution, tabsContainer: UIView)
+    case tab(Tab, solutionWithInputs: SolutionWithInputs, tabsContainer: UIView)
     
     enum Tab: Int {
-        case table
         case animated
+        case table
     }
 }
 
@@ -34,7 +34,7 @@ extension SolutionRouter: SolutionRoutingLogic {
         guard let viewController = viewController else { return }
         
         switch route {
-        case let .tab(tab, solution, tabsContainer):
+        case let .tab(tab, solutionWithInputs, tabsContainer):
             displayedTabContentViewController?.willMove(toParent: nil)
             displayedTabContentViewController?.view.removeFromSuperview()
             displayedTabContentViewController?.removeFromParent()
@@ -42,9 +42,9 @@ extension SolutionRouter: SolutionRoutingLogic {
             let tabContentViewController: UIViewController = tabContentViewControllers[tab, default: {
                 switch tab {
                 case .table:
-                    return TableSolutionFactory.build(solution)
+                    return TableSolutionFactory.build(solutionWithInputs.solution)
                 case .animated:
-                    return AnimatedSolutionFactory.build(solution)
+                    return AnimatedSolutionFactory.build(solutionWithInputs)
                 }
             }()]
             tabContentViewControllers[tab] = tabContentViewController

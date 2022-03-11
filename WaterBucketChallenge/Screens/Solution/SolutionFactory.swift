@@ -6,9 +6,11 @@
 //
 
 final class SolutionFactory: ViewControllerFactory {
-    static func build(_ solution: Solution) -> SolutionViewController {
+    
+    
+    static func build(_ solutionWithInputs: SolutionWithInputs) -> SolutionViewController {
         let presenter = SolutionPresenter()
-        let interactor = SolutionInteractor(solution: solution, presenter: presenter)
+        let interactor = SolutionInteractor(solutionWithInputs: solutionWithInputs, presenter: presenter)
         let router = SolutionRouter()
         let viewController = SolutionViewController(interactor: interactor, router: router)
         presenter.viewController = viewController

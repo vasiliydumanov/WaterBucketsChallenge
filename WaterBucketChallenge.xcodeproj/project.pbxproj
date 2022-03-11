@@ -24,6 +24,7 @@
 		FF4B00B827D116BA00C58220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4B00B727D116BA00C58220 /* Assets.xcassets */; };
 		FF4B00BB27D116BA00C58220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4B00B927D116BA00C58220 /* LaunchScreen.storyboard */; };
 		FF4B00C627D116F200C58220 /* InputsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B00C527D116F200C58220 /* InputsViewController.swift */; };
+		FF63B6D627D93F2E0065CA31 /* BucketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF63B6D527D93F2E0065CA31 /* BucketView.swift */; };
 		FF6ED04B27D7DD6C00217D53 /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED04A27D7DD6C00217D53 /* SolutionViewController.swift */; };
 		FF6ED04D27D7DD7700217D53 /* SolutionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED04C27D7DD7700217D53 /* SolutionInteractor.swift */; };
 		FF6ED04F27D7DD8600217D53 /* SolutionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6ED04E27D7DD8600217D53 /* SolutionPresenter.swift */; };
@@ -45,6 +46,10 @@
 		FFC3BAAD27D22319002B563C /* InputsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAC27D22319002B563C /* InputsRouter.swift */; };
 		FFC3BAAF27D22C04002B563C /* RootFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BAAE27D22C04002B563C /* RootFactory.swift */; };
 		FFC3BD2227D262C6002B563C /* TableSolutionItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC3BD2127D262C5002B563C /* TableSolutionItemCell.swift */; };
+		FFDCFB5827DA82AF00C3CFB7 /* BucketsSolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFB5727DA82AF00C3CFB7 /* BucketsSolutionView.swift */; };
+		FFDCFB5A27DA900C00C3CFB7 /* SolutionStepsIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFB5927DA900C00C3CFB7 /* SolutionStepsIterator.swift */; };
+		FFDCFB5C27DA98AB00C3CFB7 /* SolutionWithInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFB5B27DA98AB00C3CFB7 /* SolutionWithInputs.swift */; };
+		FFDCFB5E27DAA9A700C3CFB7 /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCFB5D27DAA9A700C3CFB7 /* ArrowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +87,7 @@
 		FF4B00BA27D116BA00C58220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF4B00BC27D116BA00C58220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4B00C527D116F200C58220 /* InputsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsViewController.swift; sourceTree = "<group>"; };
+		FF63B6D527D93F2E0065CA31 /* BucketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketView.swift; sourceTree = "<group>"; };
 		FF6ED04A27D7DD6C00217D53 /* SolutionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
 		FF6ED04C27D7DD7700217D53 /* SolutionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionInteractor.swift; sourceTree = "<group>"; };
 		FF6ED04E27D7DD8600217D53 /* SolutionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionPresenter.swift; sourceTree = "<group>"; };
@@ -103,6 +109,10 @@
 		FFC3BAAC27D22319002B563C /* InputsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsRouter.swift; sourceTree = "<group>"; };
 		FFC3BAAE27D22C04002B563C /* RootFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFactory.swift; sourceTree = "<group>"; };
 		FFC3BD2127D262C5002B563C /* TableSolutionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSolutionItemCell.swift; sourceTree = "<group>"; };
+		FFDCFB5727DA82AF00C3CFB7 /* BucketsSolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketsSolutionView.swift; sourceTree = "<group>"; };
+		FFDCFB5927DA900C00C3CFB7 /* SolutionStepsIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionStepsIterator.swift; sourceTree = "<group>"; };
+		FFDCFB5B27DA98AB00C3CFB7 /* SolutionWithInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolutionWithInputs.swift; sourceTree = "<group>"; };
+		FFDCFB5D27DAA9A700C3CFB7 /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +252,16 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		FF63B6D427D93F1C0065CA31 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				FF63B6D527D93F2E0065CA31 /* BucketView.swift */,
+				FFDCFB5727DA82AF00C3CFB7 /* BucketsSolutionView.swift */,
+				FFDCFB5D27DAA9A700C3CFB7 /* ArrowView.swift */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
 		FF6ED03E27D7D9CF00217D53 /* Table */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,11 +278,13 @@
 		FF6ED03F27D7D9DB00217D53 /* Animated */ = {
 			isa = PBXGroup;
 			children = (
+				FF63B6D427D93F1C0065CA31 /* Graphics */,
 				FFBA130927D7EAB900BE0006 /* AnimatedSolutionViewController.swift */,
 				FFBA130B27D7EAC100BE0006 /* AnimatedSolutionInteractor.swift */,
 				FFBA130D27D7EACA00BE0006 /* AnimatedSolutionPresenter.swift */,
 				FFBA130F27D7EAD000BE0006 /* AnimatedSolutionDataFlow.swift */,
 				FFBA131127D7EAD700BE0006 /* AnimatedSolutionFactory.swift */,
+				FFDCFB5927DA900C00C3CFB7 /* SolutionStepsIterator.swift */,
 			);
 			path = Animated;
 			sourceTree = "<group>";
@@ -292,6 +314,7 @@
 			children = (
 				FF47081027D161D500CACA9F /* Bucket.swift */,
 				FF47080C27D14EB600CACA9F /* Inputs.swift */,
+				FFDCFB5B27DA98AB00C3CFB7 /* SolutionWithInputs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -499,12 +522,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC3BAA927D22125002B563C /* TableSolutionDataFlow.swift in Sources */,
+				FFDCFB5827DA82AF00C3CFB7 /* BucketsSolutionView.swift in Sources */,
 				FFBA131027D7EAD000BE0006 /* AnimatedSolutionDataFlow.swift in Sources */,
 				FF47080F27D160E400CACA9F /* WaterBucketChallengeSolver.swift in Sources */,
+				FFDCFB5E27DAA9A700C3CFB7 /* ArrowView.swift in Sources */,
 				FF47080727D143A400CACA9F /* InputsFactory.swift in Sources */,
 				FF47081127D161D500CACA9F /* Bucket.swift in Sources */,
 				FFC3BAA527D22118002B563C /* TableSolutionInteractor.swift in Sources */,
 				FF6ED04B27D7DD6C00217D53 /* SolutionViewController.swift in Sources */,
+				FF63B6D627D93F2E0065CA31 /* BucketView.swift in Sources */,
 				FF6ED05327D7DD9C00217D53 /* SolutionDataFlow.swift in Sources */,
 				FFC3BAAD27D22319002B563C /* InputsRouter.swift in Sources */,
 				FF47080527D1404E00CACA9F /* InputsDataFlow.swift in Sources */,
@@ -522,6 +548,8 @@
 				FFBA130C27D7EAC100BE0006 /* AnimatedSolutionInteractor.swift in Sources */,
 				FFC3BAA727D2211E002B563C /* TableSolutionPresenter.swift in Sources */,
 				FF47080327D13E3F00CACA9F /* InputsPresenter.swift in Sources */,
+				FFDCFB5A27DA900C00C3CFB7 /* SolutionStepsIterator.swift in Sources */,
+				FFDCFB5C27DA98AB00C3CFB7 /* SolutionWithInputs.swift in Sources */,
 				FF4B00C627D116F200C58220 /* InputsViewController.swift in Sources */,
 				FFBA130E27D7EACA00BE0006 /* AnimatedSolutionPresenter.swift in Sources */,
 				FFC3BD2227D262C6002B563C /* TableSolutionItemCell.swift in Sources */,
